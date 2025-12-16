@@ -1,0 +1,13 @@
+NIS2 COMPLIANCE REPORT
+==================================================
+Company name: drgegd
+Report generated: 2025-12-16 22:59:57
+
+NIS2 applicable: NO
+
+For your company it is only recommended to follow NIS2 directive.
+
+Link for the official NIS2 directive document: https://eur-lex.europa.eu/eli/dir/2022/2555
+Link for a summary of the key rules of NIS2 and implementation steps: https://advisera.com/articles/nis2-implementation-steps/
+
+End of report

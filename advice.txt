@@ -1,0 +1,74 @@
+1) Start with a gap analysis
+To start, you should check what kind of cybersecurity you already have to avoid any duplication of effort later on.
+Once you have this information, then you can estimate the scope and move on to the next step.
+Use this free NIS2 Gap Analysis Tool.
+
+2) Obtain senior management support
+You might think that, since NIS2 is mandatory, complying with this regulation will go smoothly with or without senior management commitment. Unfortunately, the reality is different — if the top management does not actively support such a project, it will be slow, underfunded, and blocked at every possible step.
+
+So, even though NIS 2 is mandatory, you still have to convince your executives that this is something worth focusing on.
+
+3) Set up project management
+NIS 2 is too complex to just give it to your, e.g., IT administrator, hoping that everything will turn out fine. First of all, you cannot expect someone without formal authority to succeed with such a big project, and second — you need to have a clear idea of the implementation steps, milestones, main outcomes, responsibilities, etc.
+
+In other words, a project approach is necessary if you want to succeed.
+
+4) Perform initial training
+NIS 2 places a big emphasis on performing security training, and it makes sense to perform initial training very early in the project.
+This way, everyone involved will have a much better picture of what NIS 2 is, what needs to be done, why it is needed, etc. — and you will launch your project much more easily.
+
+5) Write a top-level Policy on Information System Security
+Even though NIS2 does not specifically require a top-level document that defines the direction for cybersecurity, such a document is a best practice according to international standards because of the following fact: If you don’t know where you are going, you will likely get lost.
+
+This is why such a top-level document is needed — it clearly shows what needs to be achieved with cybersecurity, what the main roles and responsibilities are, and how the success will be measured.
+
+6) Define the Risk Management Methodology
+Risk management is usually the most complex step in the compliance process, and, on top of this, NIS 2 has some specific requirements for how this risk management needs to be done.
+
+To make sure that your company is compliant with NIS 2, and to make sure everyone in the company understands how risks need to be managed, you have to create a document that specifies clear rules — this is done through the Risk Management Methodology document.
+
+7) Perform risk assessment and treatment
+During the risk assessment, you have to find out what could jeopardize your information systems — this is usually done by listing assets and related threats and vulnerabilities; further, you have to find out how big those risks are by assessing likelihood and severity (impact).
+
+After you have the list of risks, you have to figure out how to treat (i.e., mitigate) the highest risks — for most of them, you will implement the cybersecurity measures defined in Article 21. In this way, you have cybersecurity that is based on a thorough analysis, rather than implementing various measures without knowing why.
+
+8) Write and approve the Risk Treatment Plan
+Once you have a complete idea of which risks you have and how to treat them, you will need to create a concrete plan for how to implement cybersecurity measures — and, even more importantly, to get the approval of senior management for such a plan.
+
+The Risk Treatment Plan is in fact an implementation plan, and it typically includes a list of all cybersecurity measures (i.e., activities, processes, and technologies) that need to be implemented, together with information on who is in charge, what the deadlines are, etc
+
+9) Implement cybersecurity measures
+Of course, the key NIS 2 requirement is to implement various cybersecurity measures. In practice, this means that you will have to introduce new security processes, activities, and, in some cases, new technology, all based on the results of the risk assessment.
+
+In any case, you will have to write various cybersecurity policies and procedures to set clear rules for those new processes, activities, and technologies.
+
+10) Set up supply chain security
+NIS 2 has recognized that an increasing number of security incidents are related to breaches with suppliers — it requires paying close attention to relationships with suppliers and service providers, which includes assessment of their vulnerabilities, and studying their software development procedures.
+
+This is done through a formal risk assessment of suppliers, selecting only reliable suppliers to work with, including security clauses in agreements with them, and monitoring their security posture.
+
+11) Set up the assessment of cybersecurity effectiveness
+NIS 2 requires the senior management to oversee the implementation of cybersecurity measures — the best practice is to do this in three ways: (1) by continuously measuring and monitoring cybersecurity to be able to spot any deviations, (2) by introducing periodic internal audits to discover nonconformities, and (3) by introducing periodic management review to have a formal session for reviewing all facts related to cybersecurity.
+
+2) Set up incident reporting
+One of the key NIS 2 requirements is to notify the CSIRT (or competent authority), and the recipients of services, about significant incidents.
+
+Entities need to submit several types of reports to the CSIRT: an early warning, an incident notification, an intermediate report, a final report, and a progress report.
+
+13) Set up continual cybersecurity training
+NIS 2 is very specific about setting up cybersecurity for all employees, including the senior management. The challenge here is how to select the right topics, and what form of training to choose in order to get the right knowledge transfer without spending too much time or money.
+
+14) Periodic internal audit
+It is true that the internal audit is not mentioned in NIS 2; however, ISO 27001 and other international standards suggest the internal audit as the best practice for senior management to be able to oversee the implementation of cybersecurity measures.
+
+Without identifying nonconformities during the internal audit, the senior management would never have a complete picture of the state of cybersecurity, which could lead to incidents and liability.
+
+15) Periodic management review
+A management review is a formal meeting at which the senior management needs to receive all relevant information about cybersecurity (e.g., Measurement Report, Internal Audit Report, etc.) in order to make key decisions about cybersecurity.
+
+During the management review, the senior management could raise corrective actions, change key roles and responsibilities, set new security objectives, define the security budget, etc.
+
+16) Execute corrective actions
+Corrective actions are a systematic way to resolve nonconformities — during their implementation, the cause of a nonconformity is formally analyzed, and the activities to eliminate this cause are defined and executed.
+
+In other words, the purpose of corrective actions is to make sure that similar nonconformities do not happen again.

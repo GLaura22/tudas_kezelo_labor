@@ -1,0 +1,221 @@
+NIS2 validator questions:
+
+Does your company has to follow NIS2 directive?
+	yes if (all of them have to be true):
+	1, you provide services or carry out activities in the EU
+	2, you have more than 50 employees and have more than 10 million euro in revenue
+	3, you operate in any of these sectors:
+		Energy
+		Transport
+		Banking
+		Financial market infrastructures
+		Health
+		Drinking water
+		Waste water
+		Digital infrastructure
+		ICT service management (business-to-business)
+		Public administration
+		Space
+		Postal and courier services
+		Waste management
+		Manufacture, production, and distribution of chemicals
+		Production, processing, and distribution of food
+		Manufacturing
+		Digital providers
+		Research
+		
+Is your company an essential entity?
+	yes if (all of them has to be true), 
+	1, you have more than 250 employees or 50 million euro of revenue
+	2, you are in one of the following sectors:
+		energy
+		transport
+		banking
+		financial market infrastructures
+		health
+		drinking water
+		waste water
+		digital infrastructure
+		ICT service management (business-to-business
+		public administration or space
+		trust service providers
+		DNS service providers
+		public electronic communication networks
+		Public administration entities
+	if no that your company is an important entity (if it has to follow NIS2 but isnt an essential entity)
+		
+
+Fines:
+	For essential entities – up to 10 million euros or 2% of the total annual turnover
+	For important entities – up to 7 million euros or 1.4% of the total annual turnover
+	
+Actions to take to comply to the NIS2 directive:
+	Obtain senior management support.
+	Set up project management.
+	Perform initial training.
+	Write a top-level Policy on information system security.
+	Define the Risk Management Methodology.
+	Perform risk assessment and treatment.
+	Write and approve the Risk Treatment Plan.
+	Implement cybersecurity measures.
+	Set up supply chain security.
+	Set up the assessment of cybersecurity effectiveness.
+	Set up incident notifications.
+	Set up continual cybersecurity training.
+	Conduct periodic internal audits.
+	Conduct periodic management review.
+	Execute corrective actions.
+	
+Documents needed:
+What must be documented
+NIS 2 / CIR article								
+Usually documented through
+
+Management bodies must approve
+the cybersecurity
+risk-management measures
+Article 20, paragraph 1 CIR 2024/2690 Annex point 2.1
+Risk Treatment Plan
+
+Management bodies must oversee the 										 
+implementation of cybersecurity 					
+risk-management measures						
+Article 20, paragraph 1 CIR 2024/2690 Annex point 7
+Measurement Report + Internal Audit Report + Management Review Minutes
+
+Members of the management 
+bodies are required to follow 
+training, and must offer similar					
+training to their employees on		
+a regular basis
+Article 20, paragraph 2 CIR 2024/2690 Annex point 8
+Training and Awareness Plan
+
+Entities must take appropriate 
+and proportionate technical, 											
+operational, and organizational 					
+measures to manage the risks				
+Article 21, paragraph 1 CIR 2024/2690 Annex point 2.1
+Risk Treatment Table + Risk Treatment Plan + various policies and procedures mentioned below
+
+When assessing the proportionality of measures, due account shall be taken of the degree of the entity’s exposure to risks, the entity’s size and the likelihood of occurrence of incidents and their severity, including their societal and economic impact	Article 21, paragraph 1
+CIR 2024/2690 Annex point 2.1
+Risk Assessment Methodology + Risk Assessment Table
+
+Policy on risk analysis	Article 21, paragraph 2, point (a)
+CIR 2024/2690 Annex point 2.1
+Risk Assessment Methodology
+
+Policy on information system security	Article 21, paragraph 2, point (a)
+CIR 2024/2690 Annex point 1.1
+Policy on Information System Security
+
+Incident handling	Article 21, paragraph 2, point (b)
+CIR 2024/2690 Articles 3 to 14 and Annex points 3.1, 3.3, 3.4, 3.5, 3.6, and 4.3.3
+Incident Handling Policy + Incident Log
+
+Business continuity	Article 21, paragraph 2, point (c)
+CIR 2024/2690 Annex point 4.1
+Business Continuity Plan
+
+Backup management	Article 21, paragraph 2, point (c)
+CIR 2024/2690 Annex point 4.2
+Backup Policy
+
+Disaster recovery	Article 21, paragraph 2, point (c)
+CIR 2024/2690 Annex point 4.1
+Disaster Recovery Plan
+
+Crisis management	Article 21, paragraph 2, point (c)
+CIR 2024/2690 Annex point 4.3
+Crisis Management Plan
+
+Supply chain security, including security-related aspects concerning the relationships between each entity and its direct suppliers or service providers	Article 21, paragraph 2, point (d)
+CIR 2024/2690 Annex point 5
+Supplier Security Policy + Security Clauses for Suppliers and Partners + Confidentiality Statement
+
+Security in network and information systems acquisition, development and maintenance	Article 21, paragraph 2, point (e)
+CIR 2024/2690 Annex points 6.1, 6.2, and 6.5
+Policy for the Acquisition, Development, and Maintenance of ICT Systems + Specification of Acquisition, Development, and Maintenance Requirements of ICT System
+
+Policies and procedures to assess the effectiveness of cybersecurity risk-management measures	Article 21, paragraph 2, point (f)
+CIR 2024/2690 Annex point 7
+Measurement Methodology + Measurement Report + Internal Audit Procedure + Internal Audit Checklist + Internal Audit Report + Management Review Procedure
+
+Basic cyber hygiene practices	Article 21, paragraph 2, point (g)
+CIR 2024/2690 Annex point 8.1
+IT Security Policy
+
+Cybersecurity training	Article 21, paragraph 2, point (g)
+CIR 2024/2690 Annex point 8
+Training and Awareness Plan
+
+Policies and procedures regarding the use of cryptography and encryption	Article 21, paragraph 2, point (h)
+CIR 2024/2690 Annex point 9
+Policy on Encryption and Cryptographic Controls
+
+Human resources security	Article 21, paragraph 2, point (i)
+CIR 2024/2690 Annex point 10
+Security Policy for Human Resources
+
+Access control policies	Article 21, paragraph 2, point (i)
+CIR 2024/2690 Annex point 11
+Access Control Policy
+
+Asset management	Article 21, paragraph 2, point (i)
+CIR 2024/2690 Annex point 12
+Asset Management Procedure + IT Asset Register
+
+The use of multi-factor authentication or continuous authentication solutions	Article 21, paragraph 2, point (j)
+CIR 2024/2690 Annex points 11.6 and 11.7
+Authentication Policy
+
+Secured voice, video and text communications	
+Article 21, paragraph 2, point (j)	
+Information Transfer Policy + Secure Communication Policy
+
+Secured emergency communication systems within the entity	
+Article 21, paragraph 2, point (j)	
+Secure Communication Policy
+
+Take into account the vulnerabilities specific to each direct supplier and service provider and the overall quality of products and cybersecurity practices of their suppliers and service providers, including their secure development procedures	Article 21, paragraph 3
+CIR 2024/2690 Annex point 5.1
+Supplier Security Policy + Risk Assessment and Treatment Report
+
+Take appropriate and proportionate corrective measures	Article 21, paragraph 4
+CIR 2024/2690 Annex points 2.3.3, 3.6, and 4.1.4
+Procedure for Corrective Action + Corrective Action Form
+
+Notify CSIRT or competent authority of significant incident	Article 23, paragraph 1
+CIR 2024/2690 Annex point 3.5
+Significant Incident Notification for CSIRT/Competent Authority
+
+Notify the recipients of services of significant incidents that are likely to adversely affect the provision of those services	Article 23, paragraph 1
+CIR 2024/2690 Annex point 3.3
+Significant Incident Notification for Recipients of Services
+
+Communicate to the recipients of services that are potentially affected by a significant cyber threat any measures or remedies that those recipients are able to take in response to that threat; also inform those recipients of the significant cyber threat itself	Article 23, paragraph 2
+CIR 2024/2690 Annex point 3.3
+Significant Incident Notification for Recipients of Services
+
+An early warning that indicates whether the significant incident is suspected of being caused by unlawful or malicious acts or could have a cross-border impact	Article 23, paragraph 4, point (a)
+CIR 2024/2690 Annex point 3.5
+Significant Incident Early Warning
+
+An incident notification that indicates an initial assessment of the significant incident, including its severity and impact, as well as, where available, the indicators of compromise	Article 23, paragraph 4, point (b)
+CIR 2024/2690 Annex point 3.5
+Significant Incident Notification for CSIRT/Competent Authority
+
+An intermediate report on relevant status updates	Article 23, paragraph 4, point (c)
+CIR 2024/2690 Annex point 3.5
+Significant Incident Intermediate Report
+
+A final report not later than one month after the submission of the incident notification	Article 23, paragraph 4, point (d)
+CIR 2024/2690 Annex point 3.5
+Significant Incident Final Report
+
+A progress report – in the event of an ongoing incident at the time of the submission of the Final Report	Article 23, paragraph 4, point (e)
+CIR 2024/2690 Annex point 3.5
+Significant Incident Progress Report
+
+	

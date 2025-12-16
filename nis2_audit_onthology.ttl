@@ -1,0 +1,493 @@
+@prefix : <http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/> .
+
+<http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor> rdf:type owl:Ontology ;
+                                                                    rdfs:comment "This is an onthology about NIS2 directive."@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/belongs_to
+:belongs_to rdf:type owl:ObjectProperty ;
+            rdfs:domain :Dokument ;
+            rdfs:range :NIS2_requironment .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/completed
+:completed rdf:type owl:ObjectProperty ;
+           rdfs:domain :Company ;
+           rdfs:range :NIS2_requironment ;
+           rdfs:comment "Represents which NIS2 requironments the company have completed." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/has
+:has rdf:type owl:ObjectProperty ;
+     rdfs:domain :Company ;
+     rdfs:range :Compliance_status ;
+     rdfs:comment """Company has a complience status 
+(if it reaches the requironments)"""@en .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/requires
+:requires rdf:type owl:ObjectProperty ;
+          rdfs:domain :NIS2_requironment ;
+          rdfs:range :Dokument ,
+                     :Training ;
+          rdfs:comment "NIS2 requironment requires a dokumentation"@en .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/works_in
+:works_in rdf:type owl:ObjectProperty ;
+          rdfs:domain :Company ;
+          rdfs:range :Sector ;
+          rdfs:comment "Company works in a sector"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/article
+:article rdf:type owl:DatatypeProperty ;
+         rdfs:domain :NIS2_requironment ;
+         rdfs:range xsd:unsignedInt ;
+         rdfs:comment "Shows in wich part of the directive speaks about the requironment." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/comp_status
+:comp_status rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/company_id
+:company_id rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Company ;
+            rdfs:range xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/has_employees
+:has_employees rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Company ;
+               rdfs:range xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/has_revenue
+:has_revenue rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Company ;
+             rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Company ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Company name"@en .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/operatesInEU
+:operatesInEU rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Company ;
+              rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/req_id
+:req_id rdf:type owl:DatatypeProperty ;
+        rdfs:domain :NIS2_requironment ;
+        rdfs:range xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/s_id
+:s_id rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Sector ;
+      rdfs:range xsd:unsignedInt ;
+      rdfs:comment "sector ID"@en .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/sector_id
+:sector_id rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Company ;
+           rdfs:range xsd:unsignedInt .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Company
+:Company rdf:type owl:Class ;
+         rdfs:comment "Represents an organization being evaluated."@en .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Compliance_status
+:Compliance_status rdf:type owl:Class ;
+                   rdfs:comment "Represents whether a company fulfills a requirement"@en .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Dokument
+:Dokument rdf:type owl:Class ;
+          rdfs:comment "Represents dokuments required under NIS2."@en .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/NIS2_applicable_company
+:NIS2_applicable_company rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Class ;
+                                               owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Banking
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Digital_infrastructure
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Digital_providers
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Drinking_water
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Energy
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Financial_market_infrastructures
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Health
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :ICT_service_management
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Manufacture_production_and_distribution_of_chemicals
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Manufacturing
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Postal_and_courier_services
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Production_processing_and_distribution_of_food
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Public_administration
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Research
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Space
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Transport
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Waste_management
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :works_in ;
+                                                               owl:hasValue :Waste_water
+                                                             ]
+                                                           )
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :has_employees ;
+                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:unsignedInt ;
+                                                                    owl:withRestrictions ( [ xsd:minExclusive "50"^^xsd:unsignedInt
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :has_revenue ;
+                                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                    owl:onDatatype xsd:decimal ;
+                                                                    owl:withRestrictions ( [ xsd:minExclusive 10000000
+                                                                                           ]
+                                                                                         )
+                                                                  ]
+                                             ] ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :operatesInEU ;
+                                               owl:hasValue "true"^^xsd:boolean
+                                             ] ;
+                         rdfs:subClassOf :Company .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/NIS2_requironment
+:NIS2_requironment rdf:type owl:Class ;
+                   rdfs:comment "Represents any obligation under NIS2."@en .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Sector
+:Sector rdf:type owl:Class ;
+        rdfs:comment "Represents in which area a company works at." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Training
+:Training rdf:type owl:Class ;
+          rdfs:comment "Represents cybersecurity training activities."@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor#Significant_Incident_Notification_for_Competent_Authority
+:Significant_Incident_Notification_for_Competent_Authority rdf:type owl:NamedIndividual ,
+                                                                    :Dokument ;
+                                                           :belongs_to :IncidentReporting .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Access_Control_Policy
+:Access_Control_Policy rdf:type owl:NamedIndividual ,
+                                :Dokument ;
+                       :belongs_to :CertifiedITProducts ,
+                                   :TechnicalOperationalOrganizationalMeasures .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Banking
+:Banking rdf:type owl:NamedIndividual ,
+                  :Sector ;
+         :s_id "2"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/CertifiedITProducts
+:CertifiedITProducts rdf:type owl:NamedIndividual ,
+                              :NIS2_requironment ;
+                     :article "21"^^xsd:unsignedInt ;
+                     :req_id "7"^^xsd:unsignedInt ;
+                     rdfs:comment "Use certified products when required." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Confidentiality_Statement
+:Confidentiality_Statement rdf:type owl:NamedIndividual ,
+                                    :Dokument ;
+                           :belongs_to :SupplyChainSecurity .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Digital_infrastructure
+:Digital_infrastructure rdf:type owl:NamedIndividual ,
+                                 :Sector ;
+                        :s_id "8"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Digital_providers
+:Digital_providers rdf:type owl:NamedIndividual ,
+                            :Sector ;
+                   :s_id "17"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Drinking_water
+:Drinking_water rdf:type owl:NamedIndividual ,
+                         :Sector ;
+                :s_id "6"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Energy
+:Energy rdf:type owl:NamedIndividual ,
+                 :Sector ;
+        :s_id "1"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Financial_market_infrastructures
+:Financial_market_infrastructures rdf:type owl:NamedIndividual ,
+                                           :Sector ;
+                                  :s_id "4"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Health
+:Health rdf:type owl:NamedIndividual ,
+                 :Sector ;
+        :s_id "5"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/ICT_service_management
+:ICT_service_management rdf:type owl:NamedIndividual ,
+                                 :Sector ;
+                        :s_id "9"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/IT_Security_Policy
+:IT_Security_Policy rdf:type owl:NamedIndividual ,
+                             :Dokument ;
+                    :belongs_to :CertifiedITProducts .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/IncidentReporting
+:IncidentReporting rdf:type owl:NamedIndividual ,
+                            :NIS2_requironment ;
+                   :article "23"^^xsd:unsignedInt ;
+                   :req_id "6"^^xsd:unsignedInt ;
+                   rdfs:comment "Report significant incidents to CSIRTs." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Incident_Handling_Policy
+:Incident_Handling_Policy rdf:type owl:NamedIndividual ,
+                                   :Dokument ;
+                          :belongs_to :IncidentReporting .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Internal_Audit_Report
+:Internal_Audit_Report rdf:type owl:NamedIndividual ,
+                                :Dokument ;
+                       :belongs_to :SeniorManagementResponsibility ,
+                                   :SupervisionAndFines .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Manufacture_production_and_distribution_of_chemicals
+:Manufacture_production_and_distribution_of_chemicals rdf:type owl:NamedIndividual ,
+                                                               :Sector ;
+                                                      :s_id "14"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Manufacturing
+:Manufacturing rdf:type owl:NamedIndividual ,
+                        :Sector ;
+               :s_id "16"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Postal_and_courier_services
+:Postal_and_courier_services rdf:type owl:NamedIndividual ,
+                                      :Sector ;
+                             :s_id "12"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Production_processing_and_distribution_of_food
+:Production_processing_and_distribution_of_food rdf:type owl:NamedIndividual ,
+                                                         :Sector ;
+                                                :s_id "15"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Public_administration
+:Public_administration rdf:type owl:NamedIndividual ,
+                                :Sector ;
+                       :s_id "10"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Research
+:Research rdf:type owl:NamedIndividual ,
+                   :Sector ;
+          :s_id "19"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/RiskBasedApproach
+:RiskBasedApproach rdf:type owl:NamedIndividual ,
+                            :NIS2_requironment ;
+                   :article "21"^^xsd:unsignedInt ;
+                   :req_id "3"^^xsd:unsignedInt ;
+                   rdfs:comment "Measures must be appropriate for related risks." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Risk_Assessment_Methodology
+:Risk_Assessment_Methodology rdf:type owl:NamedIndividual ,
+                                      :Dokument ;
+                             :belongs_to :RiskBasedApproach .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Risk_Treatment_Plan
+:Risk_Treatment_Plan rdf:type owl:NamedIndividual ,
+                              :Dokument ;
+                     :belongs_to :RiskBasedApproach ,
+                                 :SeniorManagementResponsibility .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/SeniorManagementResponsibility
+:SeniorManagementResponsibility rdf:type owl:NamedIndividual ,
+                                         :NIS2_requironment ;
+                                :article "20"^^xsd:unsignedInt ;
+                                :req_id "1"^^xsd:unsignedInt ;
+                                rdfs:comment "Top management must approve and oversee cybersecurity measures."@en .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Space
+:Space rdf:type owl:NamedIndividual ,
+                :Sector ;
+       :s_id "11"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/SupervisionAndFines
+:SupervisionAndFines rdf:type owl:NamedIndividual ,
+                              :NIS2_requironment ;
+                     :article "34"^^xsd:unsignedInt ;
+                     :req_id "8"^^xsd:unsignedInt ;
+                     rdfs:comment "Subject to supervision and penalties." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Supplier_Security_Policy
+:Supplier_Security_Policy rdf:type owl:NamedIndividual ,
+                                   :Dokument ;
+                          :belongs_to :SupplyChainSecurity .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/SupplyChainSecurity
+:SupplyChainSecurity rdf:type owl:NamedIndividual ,
+                              :NIS2_requironment ;
+                     :article "21"^^xsd:unsignedInt ,
+                              "5"^^xsd:unsignedInt ;
+                     rdfs:comment "Manage supplier-related cybersecurity risks." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/TechnicalOperationalOrganizationalMeasures
+:TechnicalOperationalOrganizationalMeasures rdf:type owl:NamedIndividual ,
+                                                     :NIS2_requironment ;
+                                            :article "21"^^xsd:unsignedInt ,
+                                                     "4"^^xsd:unsignedInt ;
+                                            rdfs:comment "All-hazards approach with proportionate measures." .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/TrainingRequirement
+:TrainingRequirement rdf:type owl:NamedIndividual ,
+                              :NIS2_requironment ;
+                     :article "20"^^xsd:unsignedInt ;
+                     :req_id "2"^^xsd:unsignedInt ;
+                     rdfs:comment "Regular cybersecurity training for top management and employees" .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Training_and_Awareness_Plan
+:Training_and_Awareness_Plan rdf:type owl:NamedIndividual ,
+                                      :Dokument ;
+                             :belongs_to :TrainingRequirement .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Transport
+:Transport rdf:type owl:NamedIndividual ,
+                    :Sector ;
+           :s_id "2"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Waste_management
+:Waste_management rdf:type owl:NamedIndividual ,
+                           :Sector ;
+                  :s_id "13"^^xsd:unsignedInt .
+
+
+###  http://www.semanticweb.org/laura/ontologies/2025/10/nis2_auditor/Waste_water
+:Waste_water rdf:type owl:NamedIndividual ,
+                      :Sector ;
+             :s_id "7"^^xsd:unsignedInt .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

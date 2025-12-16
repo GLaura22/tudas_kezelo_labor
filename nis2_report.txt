@@ -1,0 +1,97 @@
+NIS2 COMPLIANCE REPORT
+==================================================
+Company name: Example Company
+Report generated: 2025-12-16 23:57:39
+
+NIS2 applicable: YES
+
+Link for the official NIS2 directive document: https://eur-lex.europa.eu/eli/dir/2022/2555
+
+Link for a summary of the key rules of NIS2 and implementation steps: https://advisera.com/articles/nis2-implementation-steps/
+
+Missing / incomplete requirements:
+ - Senior management responsibilities (Art. 20)
+       missing: Hold accountability for implementation
+       necessary documentation:
+              - Internal Audit Report
+              - Risk Treatment Plan
+       requirement description:
+       Responsibilities of senior management
+       According to Article 20, the top management of essential and important entities:
+       
+       - must approve cybersecurity measures that need to be implemented in the company,
+       - must oversee their implementation, and
+       - can be held liable if cybersecurity is not implemented properly.
+       
+       Articles 32 and 33 further emphasize the liability of the legal representatives.
+ - Risk-based cybersecurity approach (Art. 21)
+       missing: Societal & economic impacts
+       necessary documentation:
+              - Risk Assessment Methodology
+              - Risk Treatment Plan
+       requirement description:
+       Risk-based approach to cybersecurity
+       Article 21 requires cybersecurity measures to be appropriate for the related risks.
+       When assessing risks, entities must take into account:
+       
+       - exposure to risks,
+       - company size,
+       - likelihood and severity of incidents,
+       - societal and economic impacts.
+ - Incident status documentation (Art. 23)
+       necessary documentation:
+              - Incident Handling Policy
+              - Significant Incident Notification for Competent Authority
+       requirement description:
+       Incident status documentation
+       Entities must maintain documentation storing status updates for incidents
+       and provide intermediate, final, and progress reports when applicable.
+ - Supervision of cybersecurity measures (Art. 21)
+       missing: Security scans
+       necessary documentation:
+              - Internal Audit Report
+       requirement description:
+       Supervision and fines
+       NIS2 requires strict oversight through:
+       
+       - on-site inspections,
+       - off-site supervision,
+       - cybersecurity audits,
+       - security scans.
+       
+       Article 34 introduces significant administrative fines for non-compliance.
+
+Recommended next steps:
+
+- Obtain senior management support
+Without active senior management commitment, NIS2 implementation will be slow, underfunded, and ineffective.
+
+- Periodic management review
+Management reviews ensure informed cybersecurity decisions.
+
+- Execute corrective actions
+Corrective actions prevent recurrence of nonconformities.
+
+- Start with a gap analysis
+To start, you should check what kind of cybersecurity you already have to avoid duplication of effort later on.
+
+- Define the Risk Management Methodology
+Risk management is the foundation of NIS 2 compliance.
+
+- Perform risk assessment and treatment
+Identify assets, threats, vulnerabilities, and apply cybersecurity measures accordingly.
+
+- Write and approve the Risk Treatment Plan
+This plan defines how cybersecurity measures will be implemented.
+
+- Set up incident reporting
+Establish reporting procedures for significant incidents.
+
+- Set up the assessment of cybersecurity effectiveness
+Use monitoring, audits, and management review.
+
+- Periodic internal audit
+Internal audits help identify nonconformities.
+
+
+End of report

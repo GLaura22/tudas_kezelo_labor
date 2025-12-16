@@ -1,0 +1,57 @@
+NIS2 requironments:
+
+1) Responsibilities of senior management
+According to Article 20, the top management of essential and important entities:
+
+must approve cybersecurity measures that need to be implemented in the company,
+must oversee their implementation, and
+can be held liable if cybersecurity is not implemented properly.
+Articles 32 and 33 further emphasizes the liability of the legal representatives of essential entities and important entities.
+
+2) Importance of training
+According to Article 20, members of top management must go through cybersecurity training, and they must enable their employees to attend such training on a regular basis.
+
+NIS 2 requires such training to cover identification of risks, assessment of cybersecurity practices, and how these cybersecurity measures help the company provide its services.
+
+Click here to see 25 security awareness videos to train the employees in your company.
+
+3) Risk-based approach to cybersecurity
+Article 21 requires cybersecurity measures to be appropriate for the related risks; when assessing the risks, NIS2 requires companies to take into account the following:
+exposure to risks
+company size
+likelihood of occurrence of incidents and their severity
+societal and economic impacts of incidents
+The 8 most important cybersecurity and reporting requirements in NIS2 - Advisera
+
+4) Cybersecurity as a mixture of technical, operational, and organizational measures
+Article 21 requires companies to “take appropriate and proportionate technical, operational and organisational measures to manage the risks posed to the security of network and information systems … and to prevent or minimise the impact of incidents on recipients of their services and on other services.”
+Further, Article 21 requires an all-hazards approach, which basically means that companies have to prepare for a wide range of potential threats.
+Finally, Article 21 specifies a range of cybersecurity documents and measures, which are listed in this article: List of required documents according to NIS 2.
+
+5) Supply chain security
+Article 21 requires companies to pay special attention to risks related to direct suppliers and service providers, in particular:
+Vulnerabilities specific to each direct supplier and service provider
+The overall quality of products and cybersecurity practices of suppliers and service providers
+Secure development procedures of suppliers and service provider.
+
+6) Reporting of significant incidents
+Article 23 requires companies to report any significant incidents to computer security incident response teams (CSIRTs) in the following way:
+An early warning — indicates whether the significant incident is suspected of being caused by unlawful or malicious acts or could have a cross-border impact.
+An incident notification — provides an initial assessment of the significant incident, including its severity and impact, as well as, where available, the indicators of compromise.
+An intermediate report — provides relevant status updates.
+A final report — needs to be created, at the latest, one month after the submission of the incident notification.
+A progress report — is created in the event of an ongoing incident at the time of the submission of the final report.
+See also: What are reporting obligations according to NIS 2?
+
+7) Using certified IT products and services
+NIS 2 does not require essential and important entities to get certified. However, the NIS2 Directive allows for EU countries (Member States) or the EU Commission to require those entities to use IT products or services that are certified. At the time of writing this article, there are no requirements for using certified IT products or services, but there is a high chance that this will become mandatory.
+Those IT products and services will need to be certified according to the European cybersecurity certification scheme.
+
+
+8) Supervision and fines
+NIS2 requires a strict oversight over essential and important entities: on-site inspections, off-site supervision, cybersecurity audits, and security scans.
+
+Similar to the EU GDPR, Article 34 introduces fines for companies that do not comply with NIS 2:
+For essential entities: a maximum of 10 million EUR or a maximum of 2% of the total worldwide annual turnover.
+For important entities: a maximum of 7 million EUR or a maximum of 1.4% of the total worldwide annual turnover.
+Judging from experience with the EU GDPR, in the first year or two of coming into effect, no large penalties tend to be levied against companies; however, lately, such fines are quite common.
