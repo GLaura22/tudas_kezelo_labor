@@ -1,5 +1,3 @@
-# advice_texts.py
-
 ADVICE_TEXTS = {
     "Start with a gap analysis":
         "Start with a gap analysis\n"

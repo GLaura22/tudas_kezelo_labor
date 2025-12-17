@@ -251,7 +251,7 @@ class QuestionnaireApp:
         # -----------------------------
         # NIS2 applicability logic
         # -----------------------------
-        # After question 2 (index 2), check answers
+        # After question 3 (index 3), check answers
         if self.current_question == 3:
             q0 = self.data.get("companyName")  
             q1 = self.data.get("nis2ApplicabelCompany")

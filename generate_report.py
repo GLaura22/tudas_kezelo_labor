@@ -22,7 +22,7 @@ def generate_report(company_data, output_path="nis2_report.txt"):
     def incident_report_time_ok(value):
         try:
             days = int(value)
-            return days <= 5
+            return days <= 22
         except (ValueError, TypeError):
             return False
 
@@ -33,6 +33,7 @@ def generate_report(company_data, output_path="nis2_report.txt"):
     q2 = company_data.get("nis2ApplicabelCompany2")
     q3 = company_data.get("nis2ApplicabelCompany3")
 
+    # such as mobile network suppliers
     exception_case = (
         q1 == "Yes" and
         q2 == "No" and
@@ -162,7 +163,6 @@ def generate_report(company_data, output_path="nis2_report.txt"):
                     for item in missing:
                         lines.append(f"       missing: {item}")
 
-                # Ontology-based documentation
                 ontology_class = REPORT_TO_ONTOLOGY.get(name)
                 docs = ontology_docs.get(ontology_class, [])
 

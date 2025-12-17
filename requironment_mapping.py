@@ -1,5 +1,3 @@
-# requirement_mapping.py
-
 REPORT_TO_ONTOLOGY = {
     "Senior management responsibilities (Art. 20)": "SeniorManagementResponsibility",
     "Risk-based cybersecurity approach (Art. 21)": "RiskBasedApproach",

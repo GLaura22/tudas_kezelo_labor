@@ -33,20 +33,3 @@ class Company:
             f"Certified IT Products Usage: {self.certifiedITProductsUsage}"
         ]
         return "\n".join(attrs)
-
-'''
-nis2ApplicabelCompany: Yes
-nis2ApplicabelCompany2: Yes
-nis2ApplicabelCompany3: Energy
-seniorManagementResponsibilities: ['Approve cybersecurity measures']
-topManagementTraining: Yes
-employeeTraining: Yes
-riskAssessmentFactors: ['Company size', 'Likelihood & severity of incidents']
-supplyChainVulnerabilities: Yes
-incidentReportingProcess: Yes
-incidentAnalysisAndCategorization: Yes
-incidentStatusUpdatesDokument: No
-incidentReportCreationTime: 1 week
-certifiedITProductsUsage: No
-supervisionMethods: ['Cybersecurity audits', 'Security scans']
-'''

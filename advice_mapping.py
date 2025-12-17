@@ -1,5 +1,3 @@
-# advice_mapping.py
-
 ONTOLOGY_ADVICE = {
     "SeniorManagementResponsibility": [
         "Obtain senior management support",
