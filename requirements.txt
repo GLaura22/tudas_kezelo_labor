@@ -13,15 +13,12 @@ According to Article 20, members of top management must go through cybersecurity
 
 NIS 2 requires such training to cover identification of risks, assessment of cybersecurity practices, and how these cybersecurity measures help the company provide its services.
 
-Click here to see 25 security awareness videos to train the employees in your company.
-
 3) Risk-based approach to cybersecurity
 Article 21 requires cybersecurity measures to be appropriate for the related risks; when assessing the risks, NIS2 requires companies to take into account the following:
 exposure to risks
 company size
 likelihood of occurrence of incidents and their severity
 societal and economic impacts of incidents
-The 8 most important cybersecurity and reporting requirements in NIS2 - Advisera
 
 4) Cybersecurity as a mixture of technical, operational, and organizational measures
 Article 21 requires companies to “take appropriate and proportionate technical, operational and organisational measures to manage the risks posed to the security of network and information systems … and to prevent or minimise the impact of incidents on recipients of their services and on other services.”
@@ -41,7 +38,6 @@ An incident notification — provides an initial assessment of the significant i
 An intermediate report — provides relevant status updates.
 A final report — needs to be created, at the latest, one month after the submission of the incident notification.
 A progress report — is created in the event of an ongoing incident at the time of the submission of the final report.
-See also: What are reporting obligations according to NIS 2?
 
 7) Using certified IT products and services
 NIS 2 does not require essential and important entities to get certified. However, the NIS2 Directive allows for EU countries (Member States) or the EU Commission to require those entities to use IT products or services that are certified. At the time of writing this article, there are no requirements for using certified IT products or services, but there is a high chance that this will become mandatory.

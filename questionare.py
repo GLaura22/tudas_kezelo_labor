@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 import generate_report
 from datetime import datetime
+import ai_formatter
 
 class QuestionnaireApp:
     def __init__(self, root):
@@ -325,6 +326,8 @@ class QuestionnaireApp:
 
         text.insert("end", "\n\nReport generated:\n")
         text.insert("end", report_path)
+
+        ai_formatter.create_ai_markdown_report()
 
     def show_final_message(self, msg):
         for widget in self.container.winfo_children():
