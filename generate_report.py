@@ -20,8 +20,8 @@ import json
 
 def generate_report(company_data, output_path="nis2_report.txt"):
 
-    with open("ai_knowledgebase.json", "r", encoding="utf-8") as file:
-        ai_knowledge = json.load(file)
+#    with open("ai_knowledgebase.json", "r", encoding="utf-8") as file:
+#        ai_knowledge = json.load(file)
     # -------------------------------------------------
     # Helper functions
     # -------------------------------------------------
