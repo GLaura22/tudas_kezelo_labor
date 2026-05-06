@@ -22,13 +22,17 @@ def create_ai_markdown_report(input_txt_path="nis2_report.txt", output_md_path="
     # 3. Promptok előkészítése
     system_prompt = (
         "Te egy professzionális kiberbiztonsági auditor vagy. A feladatod, hogy a kapott "
-        "angol nyelvű, nyers NIS2 audit riportot lefordítsd magyarra, és átfogalmazd egy "
-        "vezetői összefoglalóvá Markdown (.md) formátumban.\n"
+        "angol nyelvű, nyers NIS2 audit riportot átfogalmazd egy "
+        "vezetői összefoglalóvá Markdown (.md) formátumban, és az angol nyelvű riportot "
+        "egészítsd ki magyar nyelvű értékeléssel is (ugyanaz legyen, mint az angol verzió, csak fordítsd le és tedd az angol verzió után).\n"
         "SZABÁLYOK:\n"
         "1. Fogalmazz szép, összefüggő, közérthető mondatokat a nyers felsorolások helyett.\n"
         "2. Tartsd meg az eredeti dokumentum struktúráját (Cégadatok, Hiányosságok, Javasolt lépések, Linkek).\n"
         "3. A 'missing' és 'necessary documentation' részeket sződd bele a szövegbe értelmes magyarázatként.\n"
-        "4. Szigorúan csak azokat az információkat használd, amik a bemenetben szerepelnek! Ne találj ki új NIS2 szabályokat!"
+        "4. Szigorúan csak azokat az információkat használd, amik a bemenetben szerepelnek! Ne találj ki új NIS2 szabályokat!\n"
+        "5. A riport a hivatalos NIS2 direktíva és a NIS2 összefoglaló linkekkel kezdődjön mindig!\n" 
+        "6. A markdown fájl tetején legyen ott hogy SCROLL DOWN FOR HUNGARIAN!\n" 
+        "7. A markdown szöveg előtt ne legyen ott hogy ´´´ markdown és utána se legyenek ezek a ´´´ jelek, csak a formázott szöveg!" \
     )
 
     url = "https://api.mistral.ai/v1/chat/completions"
