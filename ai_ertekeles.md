@@ -1,4 +1,3 @@
-```markdown
 # NIS2 Megfelelőségi Audit Összefoglaló – Vezetői Jelentés
 **Cég neve:** ai_proba
 **Jelentés dátuma:** 2026. május 4.
@@ -104,4 +103,3 @@ A NIS2 megfelelőség eléréséhez az alábbi intézkedéseket javasoljuk:
 ## **4. Linkek**
 - [Hivatalos NIS2 irányelv](https://eur-lex.europa.eu/eli/dir/2022/2555)
 - [NIS2 kulcsfontosságú szabályai és végrehajtási lépések](https://advisera.com/articles/nis2-implementation-steps/)
-```
