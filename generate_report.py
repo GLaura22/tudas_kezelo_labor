@@ -8,16 +8,6 @@ from requironment_texts import REQUIREMENT_TEXTS
 import json
 
 
-
-# Példa: Hogyan használd, ha az ontológia/kód alapján hiányzik az "Exposure risks"
-###### hianyzo_kulcs = "Exposure risks"
-###### if hianyzo_kulcs in ai_knowledge:
-######     adat = ai_knowledge[hianyzo_kulcs]
-######     print(f"Téma: {adat['tema']}")
-######     print(f"Tény: {adat['teny']}")
-######     print(f"Lépés: {adat['lepes']}")
-
-
 def generate_report(company_data, output_path="nis2_report.txt"):
 
 #    with open("ai_knowledgebase.json", "r", encoding="utf-8") as file:
@@ -34,7 +24,7 @@ def generate_report(company_data, output_path="nis2_report.txt"):
     def incident_report_time_ok(value):
         try:
             days = int(value)
-            return days <= 22
+            return days <= 5
         except (ValueError, TypeError):
             return False
 

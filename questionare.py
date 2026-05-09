@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+import threading
 import generate_report
 from datetime import datetime
 import ai_formatter
@@ -321,13 +322,116 @@ class QuestionnaireApp:
         for key, value in self.data.items():
             text.insert("end", f"{key}: {value}\n")
 
-
         report_path = generate_report.generate_report(self.data)
 
         text.insert("end", "\n\nReport generated:\n")
         text.insert("end", report_path)
 
-        ai_formatter.create_ai_markdown_report()
+        # Show loading indicator before AI call
+        self._show_ai_loading()
+
+    # -------------------------------------------------------------------------
+    # Show loading screen while AI formats the report
+    # -------------------------------------------------------------------------
+    def _show_ai_loading(self):
+        # Display an animated loading screen and run the AI call in a background thread
+        for widget in self.container.winfo_children():
+            widget.destroy()
+
+        self.root.geometry("700x350")
+
+        tk.Label(
+            self.container,
+            text="Generating AI Report",
+            font=("Arial", 16, "bold")
+        ).pack(pady=(30, 10))
+
+        self._loading_label = tk.Label(
+            self.container,
+            text="Please wait while the AI formats your report...",
+            font=("Arial", 11),
+            fg="#555555"
+        )
+        self._loading_label.pack(pady=(0, 15))
+
+        # Indeterminate progress bar (spinner-style)
+        self._progress = ttk.Progressbar(
+            self.container,
+            mode="indeterminate",
+            length=400
+        )
+        self._progress.pack(pady=(0, 15))
+        self._progress.start(12)  # speed in ms per step
+
+        # Animated dots on the status label
+        self._dot_count = 0
+        self._animate_dots()
+
+        # Run AI call in a background thread so the UI stays responsive
+        thread = threading.Thread(target=self._run_ai_formatter, daemon=True)
+        thread.start()
+
+    def _animate_dots(self):
+        dots = "." * (self._dot_count % 4)
+        self._loading_label.config(
+            text=f"Please wait while the AI formats your report{dots}"
+        )
+        self._dot_count += 1
+        # Store the after-id so we can cancel it when done
+        self._dot_animation_id = self.root.after(500, self._animate_dots)
+
+    def _run_ai_formatter(self):
+        try:
+            ai_formatter.create_ai_markdown_report()
+            self.root.after(0, self._on_ai_done, None)
+        except Exception as e:
+            self.root.after(0, self._on_ai_done, str(e))
+
+    def _on_ai_done(self, error):
+        # Stop animations
+        self._progress.stop()
+        if hasattr(self, "_dot_animation_id"):
+            self.root.after_cancel(self._dot_animation_id)
+
+        for widget in self.container.winfo_children():
+            widget.destroy()
+
+        self.root.geometry("700x350")
+
+        if error:
+            tk.Label(
+                self.container,
+                text="⚠️  AI formatting failed",
+                font=("Arial", 16, "bold"),
+                fg="red"
+            ).pack(pady=20)
+            tk.Label(
+                self.container,
+                text=str(error),
+                font=("Arial", 10),
+                fg="#555555",
+                wraplength=580
+            ).pack(pady=5)
+        else:
+            tk.Label(
+                self.container,
+                text="✅  Report Ready!",
+                font=("Arial", 18, "bold"),
+                fg="green"
+            ).pack(pady=20)
+            tk.Label(
+                self.container,
+                text="Your AI-formatted report has been generated successfully.",
+                font=("Arial", 11),
+                wraplength=580
+            ).pack(pady=5)
+
+        tk.Button(
+            self.container,
+            text="Close",
+            command=self.root.destroy,
+            width=15
+        ).pack(pady=20)
 
     def show_final_message(self, msg):
         for widget in self.container.winfo_children():

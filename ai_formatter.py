@@ -21,18 +21,21 @@ def create_ai_markdown_report(input_txt_path="nis2_report.txt", output_md_path="
 
     # 3. Promptok előkészítése
     system_prompt = (
-        "Te egy professzionális kiberbiztonsági auditor vagy. A feladatod, hogy a kapott "
-        "angol nyelvű, nyers NIS2 audit riportot átfogalmazd egy "
-        "vezetői összefoglalóvá Markdown (.md) formátumban, és az angol nyelvű riportot "
-        "egészítsd ki magyar nyelvű értékeléssel is (ugyanaz legyen, mint az angol verzió, csak fordítsd le és tedd az angol verzió után).\n"
-        "SZABÁLYOK:\n"
-        "1. Fogalmazz szép, összefüggő, közérthető mondatokat a nyers felsorolások helyett.\n"
-        "2. Tartsd meg az eredeti dokumentum struktúráját (Cégadatok, Hiányosságok, Javasolt lépések, Linkek).\n"
-        "3. A 'missing' és 'necessary documentation' részeket sződd bele a szövegbe értelmes magyarázatként.\n"
-        "4. Szigorúan csak azokat az információkat használd, amik a bemenetben szerepelnek! Ne találj ki új NIS2 szabályokat!\n"
-        "5. A riport a hivatalos NIS2 direktíva és a NIS2 összefoglaló linkekkel kezdődjön mindig!\n" 
-        "6. A markdown fájl tetején legyen ott hogy SCROLL DOWN FOR HUNGARIAN!\n" 
-        "7. A markdown szöveg előtt ne legyen ott hogy ´´´ markdown és utána se legyenek ezek a ´´´ jelek, csak a formázott szöveg!" \
+        "You are a professional cybersecurity auditor."
+        "Your task is to rephrase the provided raw English NIS2 audit report into an executive summary in Markdown (.md) format. "
+        "Additionally, enhance the English report by appending a Hungarian-language evaluation (a direct translation of the English summary,"
+        "placed immediately after the English version). \n"
+
+        "RULES:\n"
+
+        "1. Craft clear, coherent, and easy-to-understand sentences instead of raw bullet points.\n"
+        "2. Preserve the original document structure (e.g., Company Data, Gaps, Recommended Actions, Links).\n"
+        "3. Integrate sections labeled as “missing” or “necessary documentation” into the text as meaningful explanations.\n"
+        "4. Strictly use only the information provided in the input. Do not invent new NIS2 regulations or details.\n"
+        "5. The report must always begin with official links to the NIS2 Directive and the NIS2 Summary.\n"
+        "6. At the top of the Markdown file, include the text: SCROLL DOWN FOR HUNGARIAN!\n"
+        "7. Write in flowing prose. Organize the text into sections and use bullet points or numbering only when absolutely necessary.\n"
+        "8. Do not include ````markdown at the beginning or end of the text. Only provide the formatted content.\n" \
     )
 
     url = "https://api.mistral.ai/v1/chat/completions"
@@ -51,7 +54,7 @@ def create_ai_markdown_report(input_txt_path="nis2_report.txt", output_md_path="
         "temperature": 0.2 # Alacsony érték: maradjon tényszerű és precíz
     }
 
-    print("Riport küldése az AI-nak fordításra és átfogalmazásra... Kérlek várj.")
+    print("Sending repotr to Mistral AI... Please wait!")
     
     # 4. API hívás és fájl mentése
     try:
@@ -64,7 +67,7 @@ def create_ai_markdown_report(input_txt_path="nis2_report.txt", output_md_path="
             with open(output_md_path, "w", encoding="utf-8") as out_file:
                 out_file.write(ai_response_text)
                 
-            print(f"\nSiker! Az AI által formázott értékelés elkészült: {output_md_path}")
+            print(f"\nResult: {output_md_path}")
         else:
             print(f"Hiba történt az API hívás során. Hibakód: {response.status_code}")
             print(response.text)

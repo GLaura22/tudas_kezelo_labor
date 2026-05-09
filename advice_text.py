@@ -41,7 +41,8 @@ ADVICE_TEXTS = {
 
     "Set up incident reporting":
         "Set up incident reporting\n"
-        "Establish reporting procedures for significant incidents.",
+        "Establish reporting procedures for significant incidents.\n"
+        "An incident report should be created in 5 days after an incident. ",
 
     "Set up continual cybersecurity training":
         "Set up continual cybersecurity training\n"
