@@ -1,103 +1,129 @@
 SCROLL DOWN FOR HUNGARIAN!
 
-# NIS2 Compliance Audit – Executive Summary for ABCDEFG
+# NIS2 Compliance Audit – Executive Summary for demo_company
 
-## Official References
-To ensure full transparency and alignment with regulatory expectations, the following official resources provide the legal and practical framework for NIS2 compliance:
+## Introduction
+This executive summary presents the findings of the NIS2 compliance audit conducted for **demo_company** on **15 May 2026**. The company is subject to the **NIS2 Directive (Directive (EU) 2022/2555)**, which establishes cybersecurity requirements for essential and important entities across the European Union. Compliance is not only a legal obligation but also a critical step in safeguarding operations, reputation, and resilience against cyber threats.
 
-- [Official NIS2 Directive (EU 2022/2555)](https://eur-lex.europa.eu/eli/dir/2022/2555)
-- [Summary of NIS2 Key Rules and Implementation Steps](https://advisera.com/articles/nis2-implementation-steps/)
-
----
-
-## Overview of Compliance Status
-
-ABCDEFG has been assessed as an entity subject to the NIS2 Directive, which imposes binding cybersecurity and incident reporting obligations. While the company demonstrates awareness of its regulatory responsibilities, the audit identified several critical gaps in governance, risk management, and operational procedures that must be addressed to achieve full compliance.
+For reference, the official NIS2 Directive can be accessed [here](https://eur-lex.europa.eu/eli/dir/2022/2555), and a practical summary of key rules and implementation steps is available [here](https://advisera.com/articles/nis2-implementation-steps/).
 
 ---
 
-## Key Compliance Gaps and Observations
+## Key Compliance Gaps Identified
 
-The audit revealed that senior management has not yet assumed formal accountability for the implementation of cybersecurity measures as mandated by **Article 20** of the NIS2 Directive. According to this provision, top management of essential and important entities is required to approve cybersecurity policies, actively oversee their execution, and bear legal liability for inadequate implementation. This responsibility is further reinforced by **Articles 32 and 33**, which emphasize the personal accountability of legal representatives. Currently, no internal audit report or risk treatment plan has been documented to demonstrate management involvement or oversight.
+The audit revealed several areas where **demo_company** does not fully meet the requirements of the NIS2 Directive. These gaps pose risks to both regulatory compliance and operational security.
 
-Furthermore, the company lacks a **risk-based cybersecurity approach** in line with **Article 21**. While some security measures may be in place, they are not systematically aligned with an assessment of exposure risks, potential societal and economic impacts, or the likelihood and severity of cyber incidents. The absence of a defined risk assessment methodology and a formal risk treatment plan prevents the organization from ensuring that its cybersecurity investments are proportionate and effective.
+### 1. Senior Management Responsibilities (Article 20)
+Under **Article 20**, senior management of essential and important entities is legally required to take an active role in cybersecurity governance. Specifically, leadership must approve cybersecurity measures, oversee their implementation, and can be held personally liable for failures in cybersecurity practices. **Articles 32 and 33** further reinforce this accountability for legal representatives.
 
-Additionally, **incident reporting procedures** under **Article 23** remain incomplete. The directive requires that significant cybersecurity incidents be reported to the competent authority within five working days. However, ABCDEFG has not yet established a documented incident handling policy or a standardized process for timely notification, increasing the risk of non-compliance during an actual incident.
+Currently, **demo_company** lacks documented evidence that senior management is actively overseeing cybersecurity implementation. The necessary documentation—including an **Internal Audit Report** and a **Risk Treatment Plan**—is either missing or incomplete. Without clear leadership engagement, the effectiveness and sustainability of cybersecurity initiatives are at risk.
+
+### 2. Risk-Based Cybersecurity Approach (Article 21)
+**Article 21** mandates that cybersecurity measures must be proportionate to the risks faced by the organization. When assessing risks, entities must consider multiple factors, including exposure to threats, company size, the likelihood and severity of potential incidents, and the broader **societal and economic impacts** of cyber disruptions.
+
+The audit found that **demo_company** has not fully integrated these considerations into its risk assessment framework. Specifically, the company has not documented its **exposure risks** or evaluated the potential societal and economic consequences of cyber incidents. Additionally, while a **Risk Assessment Methodology** and **Risk Treatment Plan** are required, neither is currently in place or formally approved.
+
+### 3. Incident Management and Reporting (Article 23)
+**Article 23** establishes strict requirements for incident handling, including the analysis, categorization, and reporting of significant cybersecurity incidents. Entities must maintain structured documentation of incident statuses and provide timely updates—including intermediate, final, and progress reports—to competent authorities when required.
+
+At present, **demo_company** lacks a formal **Incident Handling Policy** and has not established procedures for creating **Significant Incident Notifications**. Furthermore, the company does not consistently document incident statuses or ensure that reports are generated within the required **five-working-day timeframe** following an incident. This gap increases the risk of non-compliance and delays in incident response.
+
+### 4. Supervision of Cybersecurity Measures (Article 21 and Article 34)
+NIS2 requires robust oversight of cybersecurity practices through a combination of **on-site inspections, off-site supervision, cybersecurity audits, and security scans**. **Article 34** introduces significant administrative fines for non-compliance, making effective supervision a critical priority.
+
+The audit identified that **demo_company** has not implemented **on-site inspections** or **security scans** as part of its oversight mechanisms. While some internal reviews may occur, there is no formal **Internal Audit Report** to demonstrate compliance or identify areas for improvement. This lack of structured supervision leaves the company vulnerable to undetected vulnerabilities and potential regulatory penalties.
 
 ---
 
 ## Recommended Actions
 
-To achieve and sustain NIS2 compliance, ABCDEFG is strongly advised to take the following steps in a structured and prioritized manner:
+To achieve full NIS2 compliance and strengthen cybersecurity resilience, **demo_company** should prioritize the following actions:
 
-First and foremost, **secure senior management support**. Active commitment from leadership is essential to drive the implementation process, allocate necessary resources, and ensure accountability. Without this foundation, all subsequent efforts risk being delayed, underfunded, or ineffective.
+- **Secure Senior Management Support**: Active engagement from leadership is essential. Senior management must approve, oversee, and take ownership of cybersecurity measures to ensure adequate funding, accountability, and alignment with business objectives.
 
-Next, establish a **periodic management review process**. Regular reviews enable leadership to make informed decisions about cybersecurity risks, resource allocation, and policy adjustments based on evolving threats and business needs.
+- **Conduct a Comprehensive Gap Analysis**: Before implementing new measures, the company should assess its current cybersecurity posture to identify existing controls and avoid duplication of effort.
 
-Conduct a **comprehensive gap analysis** to assess the current state of cybersecurity controls. This will help identify existing strengths and avoid redundant efforts during the implementation of new measures.
+- **Define and Implement a Risk Management Methodology**: Establish a clear, repeatable process for identifying, assessing, and treating cybersecurity risks. This methodology should explicitly consider exposure risks, company size, and the societal and economic impacts of potential incidents.
 
-Define a **risk management methodology** that aligns with NIS2 requirements. This methodology should guide the identification, assessment, and treatment of cybersecurity risks in a consistent and repeatable manner.
+- **Perform a Full Risk Assessment and Develop a Risk Treatment Plan**: Identify critical assets, threats, and vulnerabilities, then define and document how cybersecurity measures will be implemented to mitigate identified risks.
 
-Following this, **perform a full risk assessment and treatment process**. This involves identifying critical assets, evaluating threats and vulnerabilities, and applying appropriate security controls based on the level of risk.
+- **Develop and Approve an Incident Handling Policy**: Create a formal policy that outlines procedures for incident detection, analysis, categorization, and reporting. Ensure that all significant incidents are documented and reported to competent authorities within five working days.
 
-Develop and formally **approve a Risk Treatment Plan**. This document should clearly outline how identified risks will be mitigated, who is responsible for each action, and the timeline for implementation.
+- **Establish Incident Reporting and Documentation Procedures**: Implement systems to track incident statuses and generate required reports, including intermediate and final updates.
 
-Finally, **establish a robust incident reporting framework**. This includes creating an incident handling policy, training relevant staff, and ensuring that significant incidents are reported to the competent authority within the required five-working-day window.
+- **Strengthen Supervision Through Audits and Scans**: Introduce regular **on-site inspections, security scans, and internal audits** to monitor the effectiveness of cybersecurity measures and ensure ongoing compliance.
+
+- **Institute Periodic Management Reviews and Internal Audits**: Schedule regular reviews by senior management to evaluate cybersecurity performance and make informed decisions. Internal audits should be conducted to identify nonconformities and drive continuous improvement.
 
 ---
 
 ## Conclusion
 
-ABCDEFG stands at a critical juncture in its NIS2 compliance journey. While the company is subject to the directive and must act swiftly, the identified gaps are addressable with focused effort and leadership commitment. By implementing the recommended actions—particularly securing management accountability, adopting a risk-based approach, and formalizing incident reporting—the organization can not only meet regulatory obligations but also strengthen its overall cyber resilience. Timely action will reduce legal exposure, enhance stakeholder trust, and protect the continuity of operations in an increasingly digital and threat-prone environment.
+While **demo_company** is subject to the NIS2 Directive and has taken initial steps toward compliance, significant gaps remain in leadership accountability, risk management, incident handling, and oversight. Addressing these gaps is not only a regulatory necessity but also a strategic imperative to protect the company’s operations, reputation, and stakeholders.
+
+Immediate action is recommended to align with NIS2 requirements and build a robust, risk-based cybersecurity framework. By implementing the recommended measures, **demo_company** can enhance its resilience, reduce exposure to cyber threats, and demonstrate a strong commitment to cybersecurity governance.
 
 ---
 
-# NIS2 MEGFELELŐSÉGI ÉRTÉKELÉS – VÉGREHAJTÓ ÖSSZEFoglALÓ AZ ABCDEFG RÉSZÉRE
+# NIS2 Megfelelőségi Audit – Vezetői Összefoglaló a demo_company részére
 
-## Hivatalos hivatkozások
-A teljes átláthatóság és a szabályozási elvárásokkal való összehangolás érdekében az alábbi hivatalos források biztosítják a NIS2 megfelelőség jogi és gyakorlati keretét:
+## Bevezetés
+Ez a vezetői összefoglaló a **demo_company** számára készült **NIS2 megfelelőségi audit** eredményeit ismerteti, amelyet **2026. május 15-én** végeztek el. A vállalat a **NIS2 Irányelv (2022/2555/EU irányelv)** hatálya alá tartozik, amely az Európai Unióban működő alapvető és fontos entitások számára határozza meg a kiberbiztonsági követelményeket. A megfelelőség nem csupán jogi kötelezettség, hanem kritikus lépés a működés, a hírnév és a kiberfenyegetésekkel szembeni ellenálló képesség védelme érdekében.
 
-- [NIS2 Irányelv hivatalos szövege (EU 2022/2555)](https://eur-lex.europa.eu/eli/dir/2022/2555)
-- [NIS2 fő szabályainak és végrehajtási lépéseinek összefoglalója](https://advisera.com/articles/nis2-implementation-steps/)
-
----
-
-## A megfelelőségi helyzet áttekintése
-
-Az ABCDEFG-et a NIS2 Irányelv hatálya alá tartozó szervezetként azonosították, amely kötelező kiberbiztonsági és incidensbejelentési kötelezettségeket ró a vállalatra. Bár a cég ismeri szabályozási felelősségeit, a vizsgálat több kritikus hiányosságot tárt fel a vezetői felelősségvállalás, a kockázatkezelés és a működési eljárások terén, amelyeket orvosolni kell a teljes megfelelőség elérése érdekében.
+A hivatalos NIS2 Irányelv itt elérhető: [https://eur-lex.europa.eu/eli/dir/2022/2555](https://eur-lex.europa.eu/eli/dir/2022/2555), míg a kulcsfontosságú szabályok és végrehajtási lépések gyakorlati összefoglalója itt található: [https://advisera.com/articles/nis2-implementation-steps/](https://advisera.com/articles/nis2-implementation-steps/).
 
 ---
 
-## Fő megfelelőségi hiányosságok és észrevételek
+## Azonosított fő megfelelőségi hiányosságok
 
-A vizsgálat során kiderült, hogy a **felső vezetés még nem vállalta fel formálisan a kiberbiztonsági intézkedések végrehajtásáért való felelősséget**, ahogy azt a NIS2 Irányelv **20. cikke** előírja. E rendelkezések szerint a lényeges és fontos entitások felső vezetésének jóvá kell hagynia a kiberbiztonsági intézkedéseket, aktívan felügyelnie kell azok végrehajtását, és jogi felelősséggel tartozik a nem megfelelő végrehajtás esetén. Ezt a kötelezettséget tovább erősítik a **32. és 33. cikkek**, amelyek a jogi képviselő személyes felelősségét hangsúlyozzák. Jelenleg azonban nem áll rendelkezésre belső audit jelentés vagy kockázatkezelési terv, amely igazolná a vezetés részvételét vagy felügyeletét.
+Az audit több olyan területet tárt fel, ahol a **demo_company** nem teljesíti teljes mértékben a NIS2 Irányelv követelményeit. Ezek a hiányosságok mind a szabályozási megfelelőség, mind a működési biztonság szempontjából kockázatot jelentenek.
 
-Ezenkívül a cég **nincs tisztában a kockázatalapú kiberbiztonsági megközelítéssel**, amely a **21. cikk** szerint kötelező. Bár bizonyos biztonsági intézkedések már létezhetnek, azok nem rendszerszerűen illeszkednek a kockázatkitettség, a társadalmi és gazdasági hatások, valamint a kiberincidensek valószínűsége és súlyossága alapján végzett értékeléshez. A kockázatértékelési módszertan és a formális kockázatkezelési terv hiánya megakadályozza a szervezetet abban, hogy biztosítsa: kiberbiztonsági beruházásai arányosak és hatékonyak.
+### 1. A felső vezetés felelőssége (20. cikk)
+A **20. cikk** szerint az alapvető és fontos entitások felső vezetése jogilag kötelezett aktívan részt venni a kiberbiztonsági irányításban. Konkrétan a vezetésnek jóvá kell hagynia a kiberbiztonsági intézkedéseket, felügyelnie kell azok végrehajtását, és személyes felelősség terheli őket a kiberbiztonsági gyakorlatok hiányosságai esetén. A **32. és 33. cikk** tovább erősíti ezt a felelősséget a jogi képviselőkre nézve.
 
-Továbbá az **incidensbejelentési eljárások** a **23. cikk** szerint nem teljesek. Az irányelv előírja, hogy jelentős kiberbiztonsági incidenseket az illetékes hatóságnak **öt munkanapon belül** be kell jelenteni. Az ABCDEFG azonban még nem dolgozott ki dokumentált incidenskezelési politikát vagy szabványosított eljárást a határidőn belüli bejelentésre, ami növeli a nem megfelelőség kockázatát egy esetleges incidens során.
+Jelenleg a **demo_company** nem rendelkezik dokumentált bizonyítékkal arról, hogy a felső vezetés aktívan felügyeli a kiberbiztonsági intézkedések végrehajtását. A szükséges dokumentáció – ideértve a **Belső Audit Jelentést** és a **Kockázatkezelési Tervet** – hiányzik vagy nem teljes. A vezetés elkötelezettségének hiánya veszélyezteti a kiberbiztonsági kezdeményezések hatékonyságát és fenntarthatóságát.
+
+### 2. Kockázatalapú kiberbiztonsági megközelítés (21. cikk)
+A **21. cikk** előírja, hogy a kiberbiztonsági intézkedéseknek arányosnak kell lenniük a szervezet által vállalt kockázatokkal. A kockázatok értékelésekor az entitásoknak több tényezőt is figyelembe kell venniük, ideértve a fenyegetettségi kitettséget, a vállalat méretét, a lehetséges incidensek valószínűségét és súlyosságát, valamint a kiberincidensek **társadalmi és gazdasági hatásait**.
+
+Az audit megállapította, hogy a **demo_company** nem integrálta teljes mértékben ezeket a szempontokat a kockázatértékelési keretrendszerébe. Konkrétan a vállalat nem dokumentálta a **fenyegetettségi kitettségét**, és nem értékelte a kiberincidensek potenciális társadalmi és gazdasági következményeit. Emellett, bár a **Kockázatértékelési Metodológia** és a **Kockázatkezelési Terv** kötelező, egyik sem áll rendelkezésre vagy nincs hivatalosan jóváhagyva.
+
+### 3. Incidenskezelés és jelentés (23. cikk)
+A **23. cikk** szigorú követelményeket állapít meg az incidensek kezelésére vonatkozóan, ideértve a jelentős kiberbiztonsági incidensek elemzését, kategorizálását és jelentését. Az entitásoknak strukturált dokumentációt kell vezetniük az incidensek állapotáról, és időbeni frissítéseket – köztes, végleges és folyamatjelentéseket – kell biztosítaniuk a hatóságok számára, amennyiben szükséges.
+
+Jelenleg a **demo_company** nem rendelkezik formális **Incidenskezelési Szabállyal**, és nem hozott létre eljárásokat a **Jelentős Incidens Értesítések** elkészítésére. Emellett a vállalat nem dokumentálja következetesen az incidensek állapotát, és nem biztosítja, hogy a jelentések az incidenst követő **öt munkanapon belül** készüljenek el. Ez a hiányosság növeli a megfelelőségi kockázatot és az incidenskezelés késlekedéseit.
+
+### 4. A kiberbiztonsági intézkedések felügyelete (21. és 34. cikk)
+A NIS2 szigorú felügyeletet ír elő a kiberbiztonsági gyakorlatok tekintetében, beleértve a **helyszíni ellenőrzéseket, távfelügyeletet, kiberbiztonsági auditokat és biztonsági szkenneléseket**. A **34. cikk** jelentős adminisztratív bírságokat vezet be a megfelelőség hiánya esetén, ami a hatékony felügyeletet kritikus prioritássá teszi.
+
+Az audit megállapította, hogy a **demo_company** nem valósította meg a **helyszíni ellenőrzéseket** vagy a **biztonsági szkenneléseket** a felügyeleti mechanizmusai részeként. Bár bizonyos belső felülvizsgálatok történhetnek, nem áll rendelkezésre formális **Belső Audit Jelentés**, amely bizonyítaná a megfelelőséget vagy azonosítaná a fejlesztési területeket. A strukturált felügyelet hiánya miatt a vállalat ki van téve a fel nem fedezett sebezhetőségeknek és potenciális szabályozási szankcióknak.
 
 ---
 
 ## Ajánlott intézkedések
 
-A NIS2 megfelelőség elérése és fenntartása érdekében az ABCDEFG-nek erősen ajánlott a következő lépéseket strukturált és prioritizált módon végrehajtania:
+A teljes NIS2 megfelelőség elérése és a kiberbiztonsági ellenálló képesség erősítése érdekében a **demo_company** számára az alábbi intézkedések prioritása javasolt:
 
-Először is, **biztosítsa a felső vezetés támogatását**. A vezetés aktív elkötelezettsége elengedhetetlen a végrehajtási folyamat előmozdításához, a szükséges erőforrások biztosításához és a felelősségvállalás garantálásához. Ennek hiányában minden további erőfeszítés késlekedhet, alulfinanszírozottá válhat vagy hatástalanná válik.
+- **Biztosítsa a felső vezetés támogatását**: A vezetés aktív elkötelezettsége alapvető fontosságú. A felső vezetésnek jóvá kell hagynia, felügyelnie és át kell vennie a kiberbiztonsági intézkedések tulajdonjogát, hogy biztosítsa a megfelelő finanszírozást, elszámoltathatóságot és az üzleti célokkal való összehangoltságot.
 
-Ezután hozzon létre **rendszeres vezetői felülvizsgálati folyamatot**. A rendszeres felülvizsgálatok lehetővé teszik a vezetés számára, hogy megalapozott döntéseket hozzon a kiberbiztonsági kockázatokról, az erőforrás-allokációról és a politikák igazításáról a változó fenyegetések és üzleti igények alapján.
+- **Végezzen átfogó hiányosság-elemzést**: Új intézkedések bevezetése előtt a vállalatnak értékelnie kell jelenlegi kiberbiztonsági helyzetét, hogy azonosítsa a meglévő kontrollokat és elkerülje a későbbi erőfeszítések duplikálását.
 
-Végezzen **átfogó hiányosság-elemzést** a jelenlegi kiberbiztonsági intézkedések állapotának felmérésére. Ez segít azonosítani a meglévő erősségeket és elkerülni a felesleges erőfeszítéseket az új intézkedések bevezetése során.
+- **Határozza meg és valósítsa meg a Kockázatkezelési Metodológiát**: Hozzon létre egy világos, megismételhető folyamatot a kiberbiztonsági kockázatok azonosítására, értékelésére és kezelésére. A metodológiának explicit módon kell kezelnie a fenyegetettségi kitettséget, a vállalat méretét, valamint a potenciális incidensek társadalmi és gazdasági hatásait.
 
-Határozza meg a **kockázatkezelési módszertant**, amely összhangban áll a NIS2 követelményeivel. Ennek a módszertannak irányítania kell a kiberbiztonsági kockázatok azonosítását, értékelését és kezelését konzisztens és megismételhető módon.
+- **Végezzen teljes körű kockázatértékelést és készítsen Kockázatkezelési Tervet**: Azonositsa a kritikus eszközöket, fenyegetéseket és sebezhetőségeket, majd határozza meg és dokumentálja, hogyan lesznek a kiberbiztonsági intézkedések bevezetve a azonosított kockázatok kezelésére.
 
-Ezt követően **végezzen teljes körű kockázatértékelést és kezelést**. Ennek során azonosítani kell a kritikus eszközöket, értékelni a fenyegetéseket és sebezhetőségeket, valamint a kockázati szintnek megfelelő biztonsági intézkedéseket kell alkalmazni.
+- **Fejlesszen ki és fogadjon el Incidenskezelési Szabályzatot**: Hozzon létre formális szabályzatot, amely meghatározza az incidensek észlelésének, elemzésének, kategorizálásának és jelentésének eljárásait. Biztosítsa, hogy minden jelentős incidenst dokumentáljanak, és a hatóságoknak öt munkanapon belül jelentést tegyenek.
 
-Dolgozzon ki és fogadjon el formálisan egy **Kockázatkezelési Tervet**. Ez a dokumentum egyértelműen kell, hogy meghatározza, hogyan lesznek kezelve a azonosított kockázatok, ki felelős az egyes intézkedésekért, és milyen időkereten belül valósulnak meg.
+- **Hozzon létre incidensjelentési és dokumentációs eljárásokat**: Vezessen be rendszereket az incidensek állapotának nyomon követésére és a szükséges jelentések – köztes és végleges frissítések – elkészítésére.
 
-Végül **hozzon létre robusztus incidensbejelentési keretrendszert**. Ennek része az incidenskezelési politika kidolgozása, a releváns munkatársak képzése, valamint annak biztosítása, hogy a jelentős incidenseket az illetékes hatóságnak az előírt öt munkanapos határidőn belül jelentik.
+- **Erősítse a felügyeletet auditok és szkennelések révén**: Vezessen be rendszeres **helyszíni ellenőrzéseket, biztonsági szkenneléseket és belső auditokat**, hogy monitorozza a kiberbiztonsági intézkedések hatékonyságát és biztosítsa a folyamatos megfelelőséget.
+
+- **Vezessen be rendszeres vezetési felülvizsgálatokat és belső auditokat**: Tervezzen rendszeres felülvizsgálatokat a felső vezetés részéről a kiberbiztonsági teljesítmény értékelésére és megalapozott döntések meghozatalára. A belső auditokat rendszeresen kell végezni a nem megfelelőségek azonosítása és a folyamatos fejlesztés érdekében.
 
 ---
 
 ## Következtetés
 
-Az ABCDEFG kritikus ponton áll a NIS2 megfelelőségi folyamatában. Bár a cég az irányelv hatálya alá tartozik, és gyorsan kell cselekednie, a azonosított hiányosságok célzott erőfeszítésekkel orvosolhatók. Az ajánlott intézkedések végrehajtásával – különösen a vezetői felelősségvállalás biztosításával, a kockázatalapú megközelítés bevezetésével és az incidensbejelentési eljárások formalizálásával – a szervezet nem csak a szabályozási kötelezettségeinek tud eleget tenni, hanem javíthatja általános kiberállóképességét is. A gyors cselekvés csökkenti a jogi kitettséget, erősíti a stakeholderek bizalmát, és védi a működési folytonosságot egy egyre digitálisabbá és fenyegetettebbé váló környezetben.
+Bár a **demo_company** a NIS2 Irányelv hatálya alá tartozik, és kezdeti lépéseket tett a megfelelőség felé, jelentős hiányosságok maradtak a vezetési elszámoltathatóság, a kockázatkezelés, az incidenskezelés és a felügyelet terén. Ezeknek a hiányosságoknak a kezelése nem csupán szabályozási szükséglet, hanem stratégiai fontosságú lépés a vállalat működésének, hírnevének és érintettjeinek védelme érdekében.
+
+Azonnali intézkedés javasolt a NIS2 követelményekkel való összehangolásra és egy robusztus, kockázatalapú kiberbiztonsági keretrendszer kiépítésére. Az ajánlott intézkedések végrehajtásával a **demo_company** javíthatja ellenálló képességét, csökkentheti a kiberfenyegetéseknek való kitettségét, és erős elkötelezettséget mutathat a kiberbiztonsági irányítás iránt.
